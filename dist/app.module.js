@@ -12,6 +12,7 @@ const config_1 = require("@nestjs/config");
 const users_module_1 = require("./users/users.module");
 const prisma_module_1 = require("./prisma/prisma.module");
 const app_config_1 = require("./config/app.config");
+const specialtys_module_1 = require("./specialty/specialtys.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -24,6 +25,7 @@ exports.AppModule = AppModule = __decorate([
             }),
             prisma_module_1.PrismaModule,
             users_module_1.UsersModule,
+            specialtys_module_1.SpecialtysModule,
         ],
     })
 ], AppModule);

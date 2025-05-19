@@ -1,0 +1,47 @@
+@baseUrl = http://localhost:3333/api/v1
+
+# @name create_specialty
+POST {{baseUrl}}/specialtys
+Content-Type: application/json
+
+{
+  "name": "teste",
+  "description": "atualizar e excluir"
+}
+
+###
+
+# @name select_all_specialty
+GET {{baseUrl}}/specialtys
+Content-Type: application/json
+
+###
+
+# @name find_by_id_specialty
+GET {{baseUrl}}/specialtys/3c34ace1-733a-40a4-8ee8-22a85bd2f417
+Content-Type: application/json
+
+###
+
+# @name update_specialty
+PUT {{baseUrl}}/specialtys/9bea1daa-1fbc-4149-a879-dd5fd210291d
+Content-Type: application/json
+
+{
+  "name": "teste atualizado",
+  "description": "atualizar e excluir"
+}
+
+###
+
+# @name delete_specialtys
+DELETE {{baseUrl}}/specialtys/9bea1daa-1fbc-4149-a879-dd5fd210291d
+Content-Type: application/json
+
+###
+
+# @name find_by_name_specialty
+GET {{baseUrl}}/specialtys?name=ortopedia
+Content-Type: application/json
+
+

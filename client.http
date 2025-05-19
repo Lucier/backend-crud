@@ -44,4 +44,56 @@ Content-Type: application/json
 GET {{baseUrl}}/specialtys?name=ortopedia
 Content-Type: application/json
 
+###
+
+# @name create_doctor
+POST {{baseUrl}}/doctors
+Content-Type: application/json
+
+{
+  "name": "para excluir",
+  "crm": "4561",
+  "phone": "987654331",
+  "email": "maria@maria.com"
+}
+
+###
+
+# @name select_all_doctor
+GET {{baseUrl}}/doctors
+Content-Type: application/json
+
+###
+
+# @name find_by_id_doctor
+GET {{baseUrl}}/doctors/adddb3d4-9b97-4198-b8df-76563ddba6eb
+Content-Type: application/json
+
+###
+
+# @name find_by_crm_doctor
+GET {{baseUrl}}/doctors?crm=456
+Content-Type: application/json
+
+###
+
+# @name update_specialty
+PUT {{baseUrl}}/doctors/dc6d1381-1608-43d2-895f-4467c26a2cf9
+Content-Type: application/json
+
+{
+  "name": "maria eduarda",
+  "crm": "456",
+  "phone": "8888888",
+  "email": "mariaeduarda@maria.com"
+}
+
+###
+
+# @name delete_specialtys
+DELETE {{baseUrl}}/doctors/91500b38-9b69-4bf5-8b56-91b60418e2db
+Content-Type: application/json
+
+###
+
 

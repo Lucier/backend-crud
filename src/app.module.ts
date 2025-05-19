@@ -4,6 +4,7 @@ import { UsersModule } from './users/users.module'
 import { PrismaModule } from './prisma/prisma.module'
 import appConfig from './config/app.config'
 import { SpecialtysModule } from './specialty/specialtys.module'
+import { DoctorsModule } from './doctor/doctors.module'
 
 type AppConfig = {
   port: number
@@ -22,6 +23,7 @@ type AppConfig = {
     PrismaModule,
     UsersModule,
     SpecialtysModule,
+    DoctorsModule,
   ],
 })
 export class AppModule {}

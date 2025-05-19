@@ -30,3 +30,15 @@ model Specialty {
 
   @@map("specialtys")
 }
+
+model Doctor {
+  id        String   @id @default(uuid())
+  name      String
+  crm       String   @unique
+  phone     String
+  email     String
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  @@map("doctors")
+}

@@ -15,9 +15,9 @@ import {
   createDoctorSchema,
   idSchema,
   updateDoctorSchema,
-  type CreateDoctorDto,
-  type IdParams,
-  type UpdateDoctorDto,
+  CreateDoctorDto,
+  IdParams,
+  UpdateDoctorDto,
 } from '../schemas/doctors.schema'
 import { ZodValidate } from 'src/common/decorators/zod-validation.decorator'
 import { ZodValidationPipe } from 'src/common/pipes/zod-validation.pipe'

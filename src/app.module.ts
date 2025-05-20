@@ -8,6 +8,7 @@ import { DoctorsModule } from './modules/doctor/doctors.module'
 import { SpecialtysModule } from './modules/specialty/specialtys.module'
 import { UsersModule } from './modules/users/users.module'
 import { ClinicsModule } from './modules/clinic/clinics.module'
+import { PatientsModule } from './modules/patient/patients.module'
 
 type AppConfig = {
   port: number
@@ -28,6 +29,7 @@ type AppConfig = {
     SpecialtysModule,
     DoctorsModule,
     ClinicsModule,
+    PatientsModule,
   ],
 })
 export class AppModule {}

@@ -15,6 +15,7 @@ const doctors_module_1 = require("./modules/doctor/doctors.module");
 const specialtys_module_1 = require("./modules/specialty/specialtys.module");
 const users_module_1 = require("./modules/users/users.module");
 const clinics_module_1 = require("./modules/clinic/clinics.module");
+const patients_module_1 = require("./modules/patient/patients.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -30,6 +31,7 @@ exports.AppModule = AppModule = __decorate([
             specialtys_module_1.SpecialtysModule,
             doctors_module_1.DoctorsModule,
             clinics_module_1.ClinicsModule,
+            patients_module_1.PatientsModule,
         ],
     })
 ], AppModule);

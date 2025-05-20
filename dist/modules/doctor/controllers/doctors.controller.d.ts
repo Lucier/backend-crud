@@ -1,6 +1,6 @@
 import { DoctorsService } from '../services/doctors.service';
 import { Doctor } from '../types/doctor.types';
-import { type CreateDoctorDto, type IdParams, type UpdateDoctorDto } from '../schemas/doctors.schema';
+import { CreateDoctorDto, IdParams, UpdateDoctorDto } from '../schemas/doctors.schema';
 export declare class DoctorsController {
     private readonly doctorsService;
     constructor(doctorsService: DoctorsService);

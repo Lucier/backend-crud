@@ -65,6 +65,12 @@ async function bootstrap(): Promise<void> {
     console.log('POST   /api/v1/clinics')
     console.log('PUT    /api/v1/clinics/:id')
     console.log('DELETE /api/v1/clinics/:id')
+    console.log('------------------------------')
+    console.log('GET    /api/v1/patients')
+    console.log('GET    /api/v1/patients/:id')
+    console.log('POST   /api/v1/patients')
+    console.log('PUT    /api/v1/patients/:id')
+    console.log('DELETE /api/v1/patients/:id')
     console.log('----------------------------------------\n')
 
     logger.log(`Application started port ${port}`)

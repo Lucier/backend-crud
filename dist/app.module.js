@@ -9,11 +9,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AppModule = void 0;
 const common_1 = require("@nestjs/common");
 const config_1 = require("@nestjs/config");
-const users_module_1 = require("./users/users.module");
 const prisma_module_1 = require("./prisma/prisma.module");
 const app_config_1 = require("./config/app.config");
-const specialtys_module_1 = require("./specialty/specialtys.module");
-const doctors_module_1 = require("./doctor/doctors.module");
+const doctors_module_1 = require("./modules/doctor/doctors.module");
+const specialtys_module_1 = require("./modules/specialty/specialtys.module");
+const users_module_1 = require("./modules/users/users.module");
+const clinics_module_1 = require("./modules/clinic/clinics.module");
 let AppModule = class AppModule {
 };
 exports.AppModule = AppModule;
@@ -28,6 +29,7 @@ exports.AppModule = AppModule = __decorate([
             users_module_1.UsersModule,
             specialtys_module_1.SpecialtysModule,
             doctors_module_1.DoctorsModule,
+            clinics_module_1.ClinicsModule,
         ],
     })
 ], AppModule);

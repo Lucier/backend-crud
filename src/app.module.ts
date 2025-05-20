@@ -1,10 +1,13 @@
 import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
-import { UsersModule } from './users/users.module'
+
 import { PrismaModule } from './prisma/prisma.module'
 import appConfig from './config/app.config'
-import { SpecialtysModule } from './specialty/specialtys.module'
-import { DoctorsModule } from './doctor/doctors.module'
+
+import { DoctorsModule } from './modules/doctor/doctors.module'
+import { SpecialtysModule } from './modules/specialty/specialtys.module'
+import { UsersModule } from './modules/users/users.module'
+import { ClinicsModule } from './modules/clinic/clinics.module'
 
 type AppConfig = {
   port: number
@@ -24,6 +27,7 @@ type AppConfig = {
     UsersModule,
     SpecialtysModule,
     DoctorsModule,
+    ClinicsModule,
   ],
 })
 export class AppModule {}

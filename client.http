@@ -96,4 +96,50 @@ Content-Type: application/json
 
 ###
 
+# @name create_clinic
+POST {{baseUrl}}/clinics
+Content-Type: application/json
+
+{
+  "name": "clinica para atualizar e excluir",
+  "address": "rua 4",
+  "phone": "987654331"
+}
+
+###
+
+# @name select_all_clinics
+GET {{baseUrl}}/clinics
+Content-Type: application/json
+
+###
+
+# @name find_by_id_clinic
+GET {{baseUrl}}/clinics/af785097-8f66-47c0-b264-09d6aa726db6
+Content-Type: application/json
+
+###
+
+# @name update_clinic
+PUT {{baseUrl}}/clinics/ead93d60-ec30-4bc8-85c9-fe2a40ce21a3
+Content-Type: application/json
+
+{
+  "name": "atualizado",
+  "crm": "456",
+  "phone": "8888888",
+  "email": "mariaeduarda@maria.com"
+}
+
+###
+
+# @name delete_clinic
+DELETE {{baseUrl}}/clinics/ead93d60-ec30-4bc8-85c9-fe2a40ce21a3
+Content-Type: application/json
+
+###
+
+
+
+
 
